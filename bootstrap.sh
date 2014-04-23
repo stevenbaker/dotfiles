@@ -5,8 +5,8 @@
 
 cd "$(dirname "${BASH_SOURCE}")"
 
-echo "Updating local 'dotfiles' workspace via git ..."
-git pull origin master || exit 1
+# echo "Updating local 'dotfiles' workspace via git ..."
+# git pull origin master || exit 1
 
 function doIt() {
 	echo "Copying local 'dotfiles' to home directory ..."
