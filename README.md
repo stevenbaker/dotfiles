@@ -14,7 +14,7 @@ Solution: This repo.  It's my way to quickly and easily get my current shell env
 If you like this, please also see:
 
 * [dotfiles.github.io](https://dotfiles.github.io) - a collection of many similar 'dotfiles' repos
-* [mathias's dotfiles](https://mathiasbynens/dotfiles) - the masterclass effort - this repo strongly inspired by his
+* [mathias's dotfiles](https://www.github.com/mathiasbynens/dotfiles) - the masterclass effort - this repo strongly inspired by his
 
 ## Installation
 
@@ -40,5 +40,5 @@ set -- -f; source install.sh
 
 ## Feedback
 
-Would love to [hear what you think](https://github.com/stevenbaker/dotfiles).
+Would love to [hear what you think](https://github.com/stevenbaker/dotfiles/issues).
 
