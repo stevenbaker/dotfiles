@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# bootstrap.sh idea goes to:
-# http://githubcom/mathiasbynens/dotfiles
-
 cd "$(dirname "${BASH_SOURCE}")"
 
 # echo "Updating local 'dotfiles' workspace via git ..."
@@ -10,9 +7,9 @@ cd "$(dirname "${BASH_SOURCE}")"
 
 function doIt() {
 	echo "Copying local 'dotfiles' to home directory ..."
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "install.sh" \
 	      --exclude "README.md" --exclude "LICENSE" -av --no-perms . ~
-    source ~/.bash_profile
+	source ~/.bash_profile
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

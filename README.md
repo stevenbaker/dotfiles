@@ -18,7 +18,7 @@ If you like this, please also see:
 
 ## Installation
 
-### Using Git + bootstrap script
+### Using Git + install script
 
 You can clone the repository where you want.
 
@@ -28,14 +28,14 @@ git clone https://github.com/stevenbaker/dotfiles.git && cd dotfiles
 
 To copy the repo's dotfiles into your home directory, run the boostrap script:
 ```bash
-source bootstrap.sh
+source install.sh
 ```
 
 Note that this will overwrite any existing files of the same name that you have in your home directory.  Because of this, a confirmation prompt is shown.
 
 You can avoid the confirmation prompt:
 ```bash
-set -- -f; source bootstrap.sh
+set -- -f; source install.sh
 ```
 
 ## Feedback
