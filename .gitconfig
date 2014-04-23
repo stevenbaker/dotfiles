@@ -1,0 +1,25 @@
+[core]
+	excludesfile = ~/.gitignore
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[color]
+	ui = true
+[push]
+	# "matching" = 'git push' -> push ALL your local branches to ones w/ matching names on remote
+    # "simple" = 'git push' -> push only the CURRENT branch to one that git pull would pull from
+	default = simple
+[merge]
+    # include summaries of merged commits in newly created merge commit messages 
+	log = true
