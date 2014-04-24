@@ -11,5 +11,6 @@ upgrade
 install ack
 install git
 install nmap
+install python --with-brewed-openssl
 install wget 
 install vim --override-system-vi
