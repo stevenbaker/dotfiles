@@ -57,9 +57,7 @@ endif
 " ----------------------
 " jedi-vim
 " ----------------------
-if exists("g:jedi")
-	let g:jedi#popup_on_dot = 0
-endif
+let g:jedi#popup_on_dot = 0
 
 " ----------------------
 " nerdtree
