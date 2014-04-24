@@ -46,6 +46,27 @@ The following command will install the dotfiles directly to your home directory 
 cd; curl -#L https://github.com/stevenbaker/dotfiles/tarball/master | tar xzv --strip-components 1 --exclude={README.md,install.sh,LICENSE}
 ```
 
+## Adding local / custom settings
+
+Occasionally, you will have extra commands or settings that you would like in your local BASH environment that do *not* make sense to commit to a public repository.  A good example of this would be your personal git `user.name` and `user.email`.
+
+Or, you may desire to override existing settings from this dotfiles repository on a case-by-case basis.
+
+Please put any such settings into `~/.bash_extras`:
+
+```bash
+# Git credentials
+# Not in the dotfiles repository
+GIT_AUTHOR_NAME="Steve Baker"
+GIT_AUTHOR_EMAIL="stevenbaker@mailinator.com"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.name "$GIT_AUTHOR_NAME"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+```
+
+If this exists in your home directory, it will be sourced.  But it should not be checked into source control. 
+
 ## Feedback
 
 Would love to [hear what you think](https://github.com/stevenbaker/dotfiles/issues).
