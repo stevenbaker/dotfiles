@@ -38,6 +38,14 @@ You can avoid the confirmation prompt:
 set -- -f; source install.sh
 ```
 
+### Git-free install
+
+The following command will install the dotfiles directly to your home directory without using Git:
+
+```bash
+cd; curl -#L https://github.com/stevenbaker/dotfiles/tarball/master | tar xzv --strip-components 1 --exclude={README.md,install.sh,LICENSE}
+```
+
 ## Feedback
 
 Would love to [hear what you think](https://github.com/stevenbaker/dotfiles/issues).
