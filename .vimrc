@@ -1,14 +1,14 @@
+" set syntax on
+syntax on
+
+" enable language-dependent indenting
+filetype plugin indent on
+
 " always show line numbers
 set number
 
 " always show status line
 set ls=2
-
-" number of spaces for tab character
-set tabstop=4
-
-" number of spaces to autoindent
-set shiftwidth=4
 
 " keep 3 lines when scrolling
 set scrolloff=3
@@ -33,15 +33,15 @@ set nowrap
 " set color of line numbers
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
-" set syntax on
-syntax on
-
 " automatic commands
 if has("autocmd")
-	" enable file type detection
-	filetype on
 	" treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+	" tabbing, indenting, etc. for various languages
+	autocmd Filetype html setlocal ts=2 sw=2 expandtab
+	autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+	autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
+	autocmd Filetype python setlocal ts=4 sw=4 expandtab
 endif
 
 " ----------------------
