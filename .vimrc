@@ -27,9 +27,6 @@ set novisualbell
 set noerrorbells
 set t_vb=
 
-" don't wrap lines
-set nowrap
-
 " set color of line numbers
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
@@ -43,6 +40,9 @@ if has("autocmd")
 	autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
 	autocmd Filetype python setlocal ts=4 sw=4 expandtab
 endif
+
+" don't wrap lines
+set nowrap
 
 " ----------------------
 " pathogen
