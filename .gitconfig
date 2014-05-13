@@ -18,8 +18,8 @@
 	ui = true
 [push]
 	# "matching" = 'git push' -> push ALL your local branches to ones w/ matching names on remote
-    # "simple" = 'git push' -> push only the CURRENT branch to one that git pull would pull from
+	# "simple" = 'git push' -> push only the CURRENT branch to one that git pull would pull from
 	default = simple
 [merge]
-    # include summaries of merged commits in newly created merge commit messages 
+	# include summaries of merged commits in newly created merge commit messages 
 	log = true
