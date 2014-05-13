@@ -20,10 +20,14 @@ If you like this, please also see:
 
 ### Using Git + install script
 
-You can clone the repository where you want.
+Clone the repository wherever you want on disk. 
 
 ```bash
+# HTTPS
 git clone https://github.com/stevenbaker/dotfiles.git && cd dotfiles
+
+# SSH
+git clone git@github.com:stevenbaker/dotfiles.git && cd dotfiles
 ```
 
 To copy the repo's dotfiles into your home directory, run the boostrap script:
